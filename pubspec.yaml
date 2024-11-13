@@ -1,0 +1,30 @@
+name: neva_aboutpage
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.0.9
+  cupertino_icons: ^1.0.8
+  google_fonts: ^4.0.3
+  carousel_slider: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  assets:
+    - assets/fotoku.jpg
+    - assets/foto1.jpg
+    - assets/foto2.jpg
+    - assets/foto3.jpg
+
+  uses-material-design: true
