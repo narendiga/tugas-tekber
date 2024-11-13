@@ -103,6 +103,7 @@ class _AboutMePageState extends State<AboutMePage> {
                 radius: 40,
                 backgroundImage: AssetImage('assets/fotoku.jpg'),
               ),
+              
               const SizedBox(width: 20),
               Expanded(
                 child: Container(
@@ -118,19 +119,20 @@ class _AboutMePageState extends State<AboutMePage> {
                       ),
                     ],
                   ),
+
                   child: const Center(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Text(
                           'Naifa Mumtazah Rendiga',
-                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(height: 10),
                         Text(
                           '5026221114',
-                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -140,6 +142,7 @@ class _AboutMePageState extends State<AboutMePage> {
               ),
             ],
           ),
+
           const SizedBox(height: 20),
           Container(
             padding: const EdgeInsets.all(20),
@@ -154,6 +157,7 @@ class _AboutMePageState extends State<AboutMePage> {
                 ),
               ],
             ),
+
             child: const Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -172,6 +176,7 @@ class _AboutMePageState extends State<AboutMePage> {
               ),
             ),
           ),
+
           const SizedBox(height: 30),
           const Text(
             "Here are some photos during the events I've been a part of!",
@@ -182,6 +187,7 @@ class _AboutMePageState extends State<AboutMePage> {
             ),
             textAlign: TextAlign.center,
           ),
+
           const SizedBox(height: 20),
           SizedBox(
             height: 200,
@@ -212,6 +218,7 @@ class _AboutMePageState extends State<AboutMePage> {
               ],
             ),
           ),
+
           const SizedBox(height: 20),
           GestureDetector(
             onTap: () {
@@ -220,6 +227,7 @@ class _AboutMePageState extends State<AboutMePage> {
                 MaterialPageRoute(builder: (context) => const ActivityDetailPage()),
               );
             },
+
             child: const Text(
               "Tap here to see the detail about the activities.",
               style: TextStyle(
@@ -231,6 +239,7 @@ class _AboutMePageState extends State<AboutMePage> {
               textAlign: TextAlign.center,
             ),
           ),
+
           const SizedBox(height: 30),
         ],
       ),
@@ -253,14 +262,12 @@ class ActivityDetailPage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
-        child: Center( // Memastikan seluruh konten di dalam Center
+        child: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center, // Rata tengah
-            children: [
-              // Menambah ruang di atas judul
+            crossAxisAlignment: CrossAxisAlignment.center,
+            
+            children: [  
               const SizedBox(height: 20),
-
-              // Foto 1 dan teks penjelasannya
               Column(
                 children: [
                   ClipRRect(
@@ -276,12 +283,12 @@ class ActivityDetailPage extends StatelessWidget {
                   const Text(
                     'Information Systems Expo (ISE!) 2024',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold), // Teks bold
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
+
               const SizedBox(height: 20),
-              // Foto 2 dan teks penjelasannya
               Column(
                 children: [
                   ClipRRect(
@@ -293,16 +300,17 @@ class ActivityDetailPage extends StatelessWidget {
                       height: 150,
                     ),
                   ),
+
                   const SizedBox(height: 8),
                   const Text(
                     'Ini Lho ITS! (ILITS) 2024',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold), // Teks bold
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
+
               const SizedBox(height: 20),
-              // Foto 3 dan teks penjelasannya
               Column(
                 children: [
                   ClipRRect(
